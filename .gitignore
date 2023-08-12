@@ -5,3 +5,4 @@
 metals.sbt
 .bsp
 .scala-build
+target
