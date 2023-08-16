@@ -39,6 +39,6 @@ val nameHasUpperCase = name.exists(_.isUpper)
 
 
 // scala type inference system allows omitting some type information
+import scala.collection.mutable.HashMap
 val x = new HashMap[Int, String]() // no need to say what type is x
-val x: Map[Int, String] = new HashMap() // no need to say what type is HashMap
 
