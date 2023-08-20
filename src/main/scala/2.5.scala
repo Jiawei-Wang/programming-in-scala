@@ -26,4 +26,9 @@
 // (x: Int, y: Int) => x + y
 
 // if a function literal has one statement that takes one argument, it can be shortened as
-@main def m(args: String*) = args.foreach(println)
+// @main def m(args: String*) = args.foreach(println)
+
+// what if I want to use loops
+@main def m(args: String*) =
+    for arg <- args do // read as "for arg in args do", and arg is always val 
+        println(arg)
