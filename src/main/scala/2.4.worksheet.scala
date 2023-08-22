@@ -3,6 +3,6 @@
 //     println("hello")
 
 // an example of input reading
-@main def m(args: String*) = {
-    println("hello, " + args(0))
-}
+// def m(args: String*) = {
+//     println("hello, " + args(0))
+// }

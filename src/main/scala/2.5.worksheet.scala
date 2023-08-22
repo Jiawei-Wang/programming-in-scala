@@ -29,6 +29,6 @@
 // @main def m(args: String*) = args.foreach(println)
 
 // what if I want to use loops
-@main def m(args: String*) =
-    for arg <- args do // read as "for arg in args do", and arg is always val 
-        println(arg)
+// def m2(args: String*) =
+//     for arg <- args do // read as "for arg in args do", and arg is always val 
+//         println(arg)
