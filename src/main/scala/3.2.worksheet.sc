@@ -19,4 +19,30 @@ val simpleList = 1 :: 2 :: 3 :: Nil
 val pair = (99, "shoes")
 val num = pair(0)
 
+// a different way to create tuple
 val anotherPair : Tuple2[Int, String] = (99, "shoes")
+
+// immutable set by default
+var jetSet = Set("Boeing", "Airbus")
+jetSet += "Lear" // returns a new immutable set, same as JetSet = jetSet + "Lear"
+val query = jetSet.contains("Cessna")
+
+// mutable set by import
+import scala.collection.mutable
+val movieSet = mutable.Set("Spotlight", "Moonlight")
+movieSet += "Parasite" // there is a defined += method in mutable.Set
+
+// immutable map example
+val RomanNumeral = Map(
+    1 -> "I", 2 -> "II"
+)
+val one = RomanNumeral(1)
+
+// mutable map example
+import scala.collection.mutable
+val treasureMap = mutable.Map.empty[Int, String]
+treasureMap += (1 -> "Go to island")
+treasureMap += (2 -> "Find big x on ground")
+treasureMap += (3 -> "Dig")
+val step2 = treasureMap(2)
+

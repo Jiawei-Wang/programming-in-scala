@@ -8,7 +8,6 @@ val big = new java.math.BigInteger("12345")
 val greetStrings = new Array[String](2) // [type](value)
 greetStrings(0) = "Hello"
 greetStrings(1) = "World" // equal to greetStrings.apply(1)
-greetStrings
 
 // a more explicit way
 val greetStrings2: Array[String] = new Array[String](3)
